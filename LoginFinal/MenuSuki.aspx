@@ -27,7 +27,7 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-md-3 col-md-offset-3">
-                        <img class="img-responsive" alt="Cinque Terre" src="v.1.jpg" style="width: 100%"
+                        <img class="img-responsive" alt="Cinque Terre" src="v1.jpg" style="width: 100%"
                             class="img-rounded" alt="Cinque Terre">
                     </div>
                     <div class="col-md-3">
