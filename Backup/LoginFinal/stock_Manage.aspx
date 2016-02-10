@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <form id="form1" runat="server"> <!---->
+    <form id="form1" runat="server">
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid container">

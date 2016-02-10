@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{788BA607-2959-4DA9-93B7-AC4FE141908D}</ProjectGuid>
+    <ProjectGuid>{086FF808-C6C9-48F9-9C9A-C3F78ACFA3B7}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LoginFinal</RootNamespace>
-    <AssemblyName>LoginFinal</AssemblyName>
+    <RootNamespace>LoginPage</RootNamespace>
+    <AssemblyName>LoginPage</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
     <FileUpgradeFlags>
@@ -20,6 +20,11 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,124 +62,117 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\project-test.mdf" />
+    <Content Include="App_Data\project-test_log.ldf">
+      <DependentUpon>project-test.mdf</DependentUpon>
+    </Content>
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
-    <Content Include="css\font-awesome.css" />
-    <Content Include="css\font-awesome.min.css" />
-    <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="img\34.jpg" />
-    <Content Include="img\44.jpg" />
-    <Content Include="img\clk2.png" />
-    <Content Include="img\colorful.jpg" />
-    <Content Include="img\images.jpg" />
+    <Content Include="MenuSuki.aspx" />
+=======
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\jquery.backstretch.js" />
-    <Content Include="js\jquery.js" />
     <Content Include="js\npm.js" />
     <Content Include="Login.aspx" />
-    <Content Include="LoginPage.csproj" />
-    <Content Include="LoginPage.csproj.user" />
     <Content Include="Main.aspx" />
     <Content Include="Manager.aspx" />
-    <Content Include="MenuSuki.aspx" />
-    <Content Include="pic\logo.png" />
     <Content Include="Registration.aspx" />
-    <Content Include="Report.aspx" />
+    <Content Include="stock_manage.aspx" />
     <Content Include="stock_add.aspx" />
-    <Content Include="stock_Manage.aspx" />
     <Content Include="stock_remove.aspx" />
+=======
+    <Content Include="Report.aspx" />
     <Content Include="testcss\css.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="นายสมชาย-วงศ์วีรธร-v1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MenuSuki.aspx.cs">
+      <DependentUpon>MenuSuki.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuSuki.aspx.designer.cs">
+      <DependentUpon>MenuSuki.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Manager.aspx.cs">
       <DependentUpon>Manager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Manager.aspx.designer.cs">
       <DependentUpon>Manager.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MenuSuki.aspx.cs">
-      <DependentUpon>MenuSuki.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MenuSuki.aspx.designer.cs">
-      <DependentUpon>MenuSuki.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Report.aspx.cs">
-      <DependentUpon>Report.aspx</DependentUpon>
+    <Compile Include="stock_manage.aspx.cs">
+      <DependentUpon>stock_manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Report.aspx.designer.cs">
-      <DependentUpon>Report.aspx</DependentUpon>
+    <Compile Include="stock_manage.aspx.designer.cs">
+      <DependentUpon>stock_manage.aspx</DependentUpon>
     </Compile>
     <Compile Include="stock_add.aspx.cs">
       <DependentUpon>stock_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="stock_add.aspx.designer.cs">
       <DependentUpon>stock_add.aspx</DependentUpon>
     </Compile>
-    <Compile Include="stock_Manage.aspx.cs">
-      <DependentUpon>stock_Manage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="stock_Manage.aspx.designer.cs">
-      <DependentUpon>stock_Manage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="stock_remove.aspx.cs">
       <DependentUpon>stock_remove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="stock_remove.aspx.designer.cs">
       <DependentUpon>stock_remove.aspx</DependentUpon>
+    <Compile Include="Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="css\bootstrap-theme.css.map" />
-    <None Include="css\bootstrap-theme.min.css.map" />
-    <None Include="css\bootstrap.css.map" />
-    <None Include="css\bootstrap.min.css.map" />
-    <None Include="fonts\fontawesome-webfont.eot" />
-    <None Include="fonts\fontawesome-webfont.ttf" />
-    <None Include="fonts\fontawesome-webfont.woff" />
-    <None Include="fonts\FontAwesome.otf" />
-    <None Include="fonts\glyphicons-halflings-regular.eot" />
-    <None Include="fonts\glyphicons-halflings-regular.ttf" />
-    <None Include="fonts\glyphicons-halflings-regular.woff" />
-    <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -189,7 +187,8 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>52999</DevelopmentServerPort>
+          <DevelopmentServerPort>52376</DevelopmentServerPort>
+          <DevelopmentServerPort>53076</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
