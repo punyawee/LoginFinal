@@ -92,7 +92,6 @@
     <Content Include="Report.aspx" />
     <Content Include="stock_add.aspx" />
     <Content Include="stock_Manage.aspx" />
-    <Content Include="stock_remove.aspx" />
     <Content Include="testcss\css.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -167,13 +166,6 @@
     </Compile>
     <Compile Include="stock_Manage.aspx.designer.cs">
       <DependentUpon>stock_Manage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="stock_remove.aspx.cs">
-      <DependentUpon>stock_remove.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="stock_remove.aspx.designer.cs">
-      <DependentUpon>stock_remove.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
