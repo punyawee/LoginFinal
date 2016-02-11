@@ -40,7 +40,7 @@
                             <asp:TextBox ID="insert_name" runat="server" CssClass="form-control" placeholder="insert name for deleting material"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="insert_name" ErrorMessage="*** Please insert name for deleting material" ForeColor="Red"></asp:RequiredFieldValidator>
                         <p style="margin-top:5px">
-                            <asp:Button ID="Button_cancel" runat="server" Text="cancel" CssClass="btn pull-right" BackColor="White" BorderColor="Red" BorderStyle="Solid" ForeColor="Red" OnClick="Button_cancel_Click" />
+                            <asp:Button ID="Button_cancel" runat="server" Text="cancel" CssClass="btn pull-right" BackColor="White" BorderColor="Red" BorderStyle="Solid" ForeColor="Red" OnClick="Button_cancel_Click" CausesValidation="False" />
                             <asp:Button ID="Button_remove" runat="server" Text="Remove" CssClass="btn pull-right" BackColor="White" BorderColor="#00CC00" BorderStyle="Solid" ForeColor="#00CC00" OnClick="Button_remove_Click" />
                         </p>
                     </div>

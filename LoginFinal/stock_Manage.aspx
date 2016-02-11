@@ -38,7 +38,6 @@
                         <asp:BoundField DataField="stock_choice" HeaderText="stock_choice" SortExpression="stock_choice" />
                         <asp:BoundField DataField="push_choice" HeaderText="push_choice" SortExpression="push_choice" />
                     </Columns>
-                    <PagerSettings Position="TopAndBottom" />
                 </asp:GridView>
 
         <br />
