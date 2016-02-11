@@ -31,6 +31,8 @@
 
         <div class="container" style="margin-top: 80px">
 
+
+
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:project-testConnectionString %>" SelectCommand="SELECT * FROM [choice]" 
                 UpdateCommand="UPDATE choice SET name_choice=@name_choice, stock_choice=@stock_choice, push_choice=@push_choice WHERE id_choice=@id_choice"
                 DeleteCommand="DELETE FROM choice WHERE id_choice=@id_choice; DELETE FROM choice WHERE id_choice=@id_choice;"></asp:SqlDataSource>
@@ -49,9 +51,6 @@
 
 
         </div>
-
-
-
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
