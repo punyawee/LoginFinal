@@ -51,7 +51,7 @@
                     </div>
 
                     <p>
-                        <asp:Button ID="Button_cancel" runat="server" Text="cancel" CssClass="btn pull-right" BackColor="White" BorderColor="Red" BorderStyle="Solid" ForeColor="Red" OnClick="Button_cancel_Click" />
+                        <asp:Button ID="Button_cancel" runat="server" Text="cancel" CssClass="btn pull-right" BackColor="White" BorderColor="Red" BorderStyle="Solid" ForeColor="Red" OnClick="Button_cancel_Click" CausesValidation="False" />
                         <asp:Button ID="Button_add" runat="server" Text="Add" CssClass="btn pull-right" BackColor="White" BorderColor="#00CC00" BorderStyle="Solid" ForeColor="#00CC00" OnClick="Button_add_Click" />
                     </p>
 

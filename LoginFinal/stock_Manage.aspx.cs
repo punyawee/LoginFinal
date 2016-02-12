@@ -19,9 +19,5 @@ namespace LoginPage
             Response.Redirect("stock_add.aspx");
         }
 
-        protected void button_remove_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("stock_remove.aspx");
-        }
     }
 }
